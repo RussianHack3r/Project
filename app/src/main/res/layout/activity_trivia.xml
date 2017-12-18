@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.george.trivia.Trivia">
 
     <Button
@@ -25,24 +26,37 @@
         android:id="@+id/userNameEditText"
         android:layout_width="218dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="user name"
         android:inputType="textPersonName"
-        android:text="User Name"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="195dp" />
+        app:layout_constraintBottom_toTopOf="@+id/beginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="241dp"
-        android:layout_height="148dp"
+        style="@style/Widget.AppCompat.Light.ActionButton"
+        android:layout_width="308dp"
+        android:layout_height="185dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
         android:text="Type in a user name"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_orange_dark"
         android:textColorHighlight="@android:color/black"
         android:textColorLink="@android:color/holo_orange_dark"
+        android:textEditNoPasteWindowLayout="@style/Animation.AppCompat.Tooltip"
         android:textIsSelectable="true"
         android:textSize="@android:dimen/app_icon_size"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
